@@ -1,0 +1,22 @@
+{
+"languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "args": ["--log-file=/tmp/ccls.log", "-v=1"],
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json"],
+      "initializationOptions": {
+         "cache": {
+           "directory": "/tmp/ccls"
+         },
+         "client": {
+          "snippetSupport": true
+         }
+       }
+    }
+  },
+  "codeLens.enable": true,
+  "java.jdt.ls.vmargs": "-javaagent:/home/samuel/lombok.jar -Xbootclasspath/a:/home/samuel/lombok.jar",
+  "java.referencesCodeLens.enabled": true,
+  "java.completion.enabled": true
+}
